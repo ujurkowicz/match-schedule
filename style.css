@@ -1,0 +1,221 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #FFFAF0;
+}
+h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: #FA8072;
+    text-shadow: 1px 1px #d5f4e6;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+#title {
+    border-bottom: 2px solid #FA8072;
+    padding: 15px;
+}
+#container {
+    background: #36486b;
+    width: 40%;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: 20px;
+    color: #fefbd8;
+    float: left;
+}
+.table-container {
+    float: right;
+    width: 45%;
+    margin: 30px 50px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 100%;
+    background: #fff;
+    color: #3e4444;
+    border-collapse: collapse;
+}
+th {
+    background: #36486b;
+    color: #fefbd8;
+    font-weight:100;
+    text-align:left;
+}
+th:first-child {
+    border-top-left-radius:5px;
+}
+th:last-child {
+        border-top-right-radius: 5px;
+    }
+ tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+ tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+tr {
+    border-bottom: 1px solid #C0C0C0;
+}
+tr:last-child {
+    border:none;
+}
+th, td {
+    padding: 8px;
+    text-align:center;
+}
+tr:hover {
+    background: #f0f0f0;
+}
+.team-name{
+    text-align:left;
+}
+input, select {
+    text-align: center;
+    box-sizing: border-box;
+    width: 70%;
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 5px;
+    border: 2px solid #b2b2b2;
+    padding: 5px;
+    color: #36486b;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    input[type="date"]{
+   /* background-image:url('date.png');*/
+    background-repeat:no-repeat;
+    background-size:7%;
+    background-position:2% 50%;
+}
+#hour {
+  /* background-image: url('clock.png');*/
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position: 2% 50%;
+}
+label {
+  padding: 25px;
+  display: inline-block;
+  width: 100px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 4px;
+}
+.btn {
+    cursor: pointer;
+    margin: 20px auto;
+    padding: 10px 25px;
+    display: flex;
+    background: #3CB371;
+    opacity: 0.95;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.2s all ease-in-out;
+}
+.btn:hover, .btn:active {
+    transform:scale(0.95);
+    opacity:1;
+}
+.added-matches {
+    padding: 50px;
+    width: 400px;
+    background: #eaece5;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+#coming-matches {
+    margin-left:12%;
+    float:left;
+    display:inline-block;
+}
+#closed-matches {
+     margin-right:12%;
+    float: right;
+    display: inline-block;
+}
+h2 {
+    color: #36486b;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+.timer {
+    display:inline-block;
+}
+input[type="number"] {
+    display: inline-block;
+    width:20%;
+
+}
+h4, h3 {
+    color: #3e4444;
+    text-align: center;
+}
+h4 {
+    font-size:18px;
+    margin:5px auto;
+}
+.match {
+    background: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    border: 1px solid #fefbd8;
+    text-align: center;
+    line-height: 30px;
+    color: #3e4444;
+}
+.match span {
+        font-size: 16px;
+        color: #667292;
+}
+.usun {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fefbd8;
+    background: #EE3131;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: 0.2s all ease-in-out;
+    float: right;
+}
+    .usun:hover {
+        background: #F32222;
+        transform: scale(0.9);
+    }
+.save-score {
+    display: inline-block;
+    float: left;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fefbd8;
+    background: #00cc00;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: 0.2s all ease-in-out;
+}
+    .save-score:hover {
+        background: #05C305;
+        transform: scale(0.9);
+    }
+#closed-matches .usun{
+    display:inline-block;
+    
+}

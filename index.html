@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Harmonogram meczów</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+    <div id="title">
+        <h1>Harmonogram meczów</h1>
+    </div>
+    <div id="container">
+        <form>
+            <div class="form-el">
+                <label for="team1">Gospodarz</label>
+                <select id="team1" class="team">
+                    <option value="Jagiellonia">Jagiellonia</option>
+                    <option value="Cracovia">Cracovia</option>
+                    <option value="Górnik Zabrze">Górnik Zabrze</option>
+                    <option value="Lech Poznań">Lech Poznań</option>
+                    <option value="Lechia Gdańsk">Lechia Gdańsk</option>
+                    <option value="Legia Warszawa">Legia Warszawa</option>
+                    <option value="Piast Gliwice">Piast Gliwice</option>
+                    <option value="Podbeskidzie Bielsko Biała">Podbeskidzie Bielsko Biała</option>
+                    <option value="Pogoń Szczecin">Pogoń Szczecin</option>
+                    <option value="Raków Częstochowa">Raków Częstochowa</option>
+                    <option value="Stal Mielec">Stal Mielec</option>
+                    <option value="Śląsk Wrocław">Śląsk Wrocław</option>
+                    <option value="Warta Poznań">Warta Poznań</option>
+                    <option value="Wisła Kraków">Wisła Kraków</option>
+                    <option value="Wisła Płock">Wisła Płock</option>
+                    <option value="Zagłębie Lubin">Zagłębie Lubin</option>
+
+                </select>
+            </div>
+            <div class="form-el">
+                <label for="team2">Przeciwnik</label>
+                <select id="team2" class="team">
+                    <option value="Jagiellonia">Jagiellonia</option>
+                    <option value="Cracovia">Cracovia</option>
+                    <option value="Górnik Zabrze">Górnik Zabrze</option>
+                    <option value="Lech Poznań">Lech Poznań</option>
+                    <option value="Lechia Gdańsk">Lechia Gdańsk</option>
+                    <option value="Legia Warszawa">Legia Warszawa</option>
+                    <option value="Piast Gliwice">Piast Gliwice</option>
+                    <option value="Podbeskidzie Bielsko Biała">Podbeskidzie Bielsko Biała</option>
+                    <option value="Pogoń Szczecin">Pogoń Szczecin</option>
+                    <option value="Raków Częstochowa">Raków Częstochowa</option>
+                    <option value="Stal Mielec">Stal Mielec</option>
+                    <option value="Śląsk Wrocław">Śląsk Wrocław</option>
+                    <option value="Warta Poznań">Warta Poznań</option>
+                    <option value="Wisła Kraków">Wisła Kraków</option>
+                    <option value="Wisła Płock">Wisła Płock</option>
+                    <option value="Zagłębie Lubin">Zagłębie Lubin</option>
+                </select>
+            </div>
+            <div class="form-el">
+                <label for="date">Data</label>
+                <input type="date" id="date" min="2020-08-01" max="2021-07-31" required />
+            </div>
+            <div class="form-el">
+                <label for="hour">Czas</label>
+                <input type="time" id="hour" required />
+            </div>
+            <button class="btn" type="submit" value="Dodaj">Dodaj</button>
+        </form>
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th></th>
+                <th>Drużyna</th>
+                <th>mecze</th>
+                <th>zwycięstwa</th>
+                <th>porażki</th>
+                <th>remisy</th>
+                <th>liczba punktów</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="team-name">Jagiellonia</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="team-name">Cracovia</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="team-name">Górnik Zabrze</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="team-name">Lech Poznań</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="team-name">Lechia Gdańsk</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="team-name">Legia Warszawa</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="team-name">Piast Gliwice</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="team-name">Podbeskidzie Bielsko Biała</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="team-name">Pogoń Szczecin</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="team-name">Raków Częstochowa</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="team-name">Stal Mielec</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="team-name">Śląsk Wrocław</td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+                <td class="nr"></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="team-name">Warta Poznań</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class="team-name">Wisła Kraków</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class="team-name">Wisła Płock</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class="team-name">Zagłębie Lubin</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div style="clear:both"></div>
+        <div id="coming-matches" class="added-matches"><h2>Nadchodzące mecze</h2></div>
+        <div id="closed-matches" class="added-matches"><h2>Zakończone mecze</h2></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
