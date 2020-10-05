@@ -20,7 +20,7 @@ h1 {
     width: 40%;
     padding: 50px;
     border-radius: 10px;
-    margin-top: 80px;
+    margin-top: 3em;
     margin-left: 20px;
     color: #fefbd8;
     float: left;
@@ -28,7 +28,7 @@ h1 {
 .table-container {
     float: right;
     width: 45%;
-    margin: 30px 50px;
+    margin: 3em 1.5em;
     font-size: 14px;
     font-family: Arial, sans-serif;
 }
@@ -86,7 +86,7 @@ input, select {
     font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-    input[type="date"]{
+input[type="date"]{
    /* background-image:url('date.png');*/
     background-repeat:no-repeat;
     background-size:7%;
@@ -129,18 +129,18 @@ select {
 }
 .added-matches {
     padding: 50px;
-    width: 400px;
+    width: 30%;
     background: #eaece5;
     margin: 30px 0px;
     border-radius: 5px;
 }
 #coming-matches {
-    margin-left:12%;
+    margin-left:6em;
     float:left;
     display:inline-block;
 }
 #closed-matches {
-     margin-right:12%;
+    margin-right:6em;
     float: right;
     display: inline-block;
 }
@@ -193,7 +193,7 @@ h4 {
     transition: 0.2s all ease-in-out;
     float: right;
 }
-    .usun:hover {
+.usun:hover {
         background: #F32222;
         transform: scale(0.9);
     }
@@ -211,11 +211,148 @@ h4 {
     margin-top: 10px;
     transition: 0.2s all ease-in-out;
 }
-    .save-score:hover {
+.save-score:hover {
         background: #05C305;
         transform: scale(0.9);
     }
 #closed-matches .usun{
     display:inline-block;
-    
+}
+@media(max-width: 480px) {
+    #title {
+        padding:0;
+    }
+    h1 {
+        font-size:2em;
+    }
+    #container, .table-container { 
+        display:flex;
+        flex:1;
+        width:auto;
+        justify-content:center;
+        float:none;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:3em;
+    }
+    input, select {
+        width:100%;
+    }
+    label {
+        padding:2em 0 1em 0;
+    }
+    .table-container{
+        margin-top:2em;
+    }
+    table {
+          font-size: 10px;
+          line-height:1.5em;
+    }
+    th, td {
+        padding:4px;
+    }
+    #coming-matches, #closed-matches {
+        float:none;
+        display:block;
+        margin:2em 0.5em;
+        width:auto;
+        padding: 2em;
+    }
+    .match label {
+        width:auto;
+    }
+    .match input {
+        width:1.5em;
+    }
+    .save-score, .usun {
+        display:block;
+        float:none;
+        width:10em;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .save-score {
+        margin: 20px auto 5px auto;
+    }
+
+}
+@media(min-width: 481px) and (max-width: 740px) {
+    #container, .table-container {
+        display: flex;
+        flex: 1;
+        width: auto;
+        justify-content: center;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+    }
+
+    input, select {
+        width: 100%;
+    }
+
+    label {
+        padding: 2em 0 1em 0;
+    }
+
+    .table-container {
+        margin-top: 2em;
+    }
+
+    table {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    #coming-matches, #closed-matches {
+        float: none;
+        display: block;
+        margin: 2em 0.5em;
+        width: auto;
+        padding: 2em;
+    }
+    .match input {
+        width: 2em;
+    }
+}
+@media(min-width: 741px) and (max-width: 1240px) {
+    #container, .table-container {
+        display: flex;
+        flex: 1;
+        width: auto;
+        justify-content: center;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+    }
+    #container form {
+        width:90%;
+    }
+    input, select {
+        width: 100%;
+    }
+
+    label {
+        padding: 2em 0 1em 0;
+    }
+
+    .table-container {
+        margin-top: 2em;
+    }
+
+    table {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    #coming-matches, #closed-matches {  
+        margin: 2em 0.5em;
+        width: 38%;
+        padding: 2em;
+    }
+
+    .match input {
+        width: 2em;
+    }
 }

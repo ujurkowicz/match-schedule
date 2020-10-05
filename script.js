@@ -177,9 +177,11 @@ function writeEndedMatches() {
  <span>${date} o ${hour}</span>
 <div>
 <form class="score-form" onsubmit="return false">
+<div class=score-block>
 <label for="score">Wynik</label>
 <input type="number" min="0" class="score" id="score1" required /> :
 <input type="number" min="0" class="score" id="score2" required />
+</div>
 <button class="save-score" type="submit" value="Zapisz" onclick="saveScore('${id}')"><i class="fa fa-check"></i> Zapisz</button>
 </form>
 <button type="reset" value="usun" class="usun"  onclick="deleteMatch('${id}')"><i class="fa fa-close"></i> Usuń</button>
